@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="com.example.kevoh.thepenguins.Fee_payment">
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/text2"
+        android:text="Enter the students fees details."/>
+
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stud_id"
+        android:inputType="textPersonName"
+        android:layout_below="@+id/text2"
+        android:layout_marginTop="10dp"
+        android:hint="Student National ID"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/stud_name"
+        android:inputType="textPersonName"
+        android:hint="Student Name"
+        android:layout_below="@+id/stud_id"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/fee_paid"
+        android:inputType="numberDecimal"
+        android:hint="Fee_paid"
+        android:layout_below="@+id/stud_name"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loan_alloc"
+        android:inputType="number"
+        android:hint="Loan Allocated"
+        android:layout_below="@+id/fee_paid"
+        android:layout_marginTop="10dp"/>
+    <EditText
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/loan_clear"
+        android:inputType="number"
+        android:hint="Loan Cleared"
+        android:layout_below="@+id/loan_alloc"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/Update"
+        android:text="Update Info"
+        android:background="@drawable/mybutton"
+        android:padding="10dp"
+        android:textColor="#FFF"
+        android:layout_below="@+id/loan_clear"
+        android:layout_marginTop="25dp"/>
+
+</RelativeLayout>
